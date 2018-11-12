@@ -1,0 +1,12 @@
+2001,manoj more,m,Maharashtra,M.Sc.(Tech)
+2002,manisha jagtap,f,delhi, M.Sc.
+2003,trishala dhaware,f,mizoram,M.C.A.
+2004,Gaurav dhumal,m,Andhra Pradesh,M.Sc.(Tech)
+2005,Swati Zinzore,f,Maharashtra,M.C.A.
+2006,Kavita Krishna,f,maharashtra, M.Sc. 
+2007,Komal Mahajan,f,delhi, M.Sc.(Tech)
+2008,Smriti Moreshwar,f,Kerala,M.C.A.
+2009,Gaurav dhumal,m,Andhra Pradesh,M.Sc.(Tech)
+2010,Swami Chedamal,f,Telangana,M.Sc.(Tech)
+2011,RohiniKumari,f,Maharashtra,M.Sc.(Tech)
+2012,Shridevi Naidu,m,Tamilnadu, M.Sc.(Tech)

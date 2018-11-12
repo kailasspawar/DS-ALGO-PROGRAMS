@@ -1,0 +1,51 @@
+#include<iostream>
+#include"bint.h"
+#include<stack>
+using namespace std;
+
+void leafOrder(bnode root,stack<int>&s)
+{
+  if(!root)
+    return;
+
+   if(!root->left&&!root->right)
+     s.push(root->data);
+
+  leafOrder(root->left,s);
+ leafOrder(root->right,s);
+}
+bool isSameLOT(bnode root1,bnode root2)
+{
+  stack<int>stk;
+     stack<int>st;
+ leafOrder(root1,stk);
+    leafOrder(root2,st);
+  if(stk.size()!=st.size())
+    return false;
+ while(!stk.empty()&&!st.empty())
+ {
+   if(stk.top()!=st.top())
+    return false;
+   stk.pop();
+     st.pop();
+ }
+ return true;
+}
+int main()
+{  
+  bnode root = newNode(10);
+    root->left = newNode(20);
+   root->left->left = newNode(50);
+   root->left->right = newNode(60);
+  root->right = newNode(40);
+  root->right->right = newNode(30);
+
+ bnode root1 = newNode(10);
+    root1->left = newNode(50);
+   root1->right = newNode(20);
+  root1->right->left = newNode(60);
+  root1->right->right = newNode(30);
+  cout<<isSameLOT(root,root1);
+  cout<<endl;
+return 0;
+}
